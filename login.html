@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<title></title>
+		<style type="text/css">
+			.icon{
+				background: url(img/icon.png) no-repeat;
+				/*精灵图原始宽度是750px 使用375px的宽度 缩小一倍 为的是移动端不失真*/
+			-webkit-background-size: 375px auto;
+			background-size: 375px auto;	
+			}
+			header{
+				max-width: 750px;
+				min-width: 320px;
+				height: 60px;
+				background-color: #39435B;
+				padding: 15px 0;
+				/*脱离文档流不再是块标签：需手动设置*/
+				position: fixed;
+				width: 100%;
+				/*定位元素的margin 0 auto 不能用 需要下面三个配合使用*/
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+			header .logo{
+				float: left;
+				background-position: 0 0;
+				width: 120px;
+				height: 35px;
+				margin-left: 10px;
+			}
+			header a{
+				display: block;
+				height: 100%;
+			}
+			header .title{
+				float: left;
+				/*使用计算设置中间部分的宽度*/
+				width: calc(100% - 170px);
+				color: #fff;
+				font-size: 1.5em;
+				text-align: center;
+				position: relative;
+				left: -45px;
+			}
+			header .login{
+				float: right;
+				background-position: -340px 0;
+				width: 35px;
+				height: 35px;
+			}
+			header span{
+				display: none;
+			}
+			/*.clear{
+				clear: both;
+			}*/
+			/*.clearfix:after{
+				content: "";
+				display: block;
+				font-size: 0;
+				visibility: hidden;
+				clear: both;
+			}*/
+			main{
+				padding-top: 60px;
+				max-width: 750px;
+				min-width: 320px;
+				margin: 0 auto;
+			}
+			main input{
+				height: 50px;
+				line-height: 50px;
+				width: 100%;
+				padding: 5px 20px;
+				font-size: 1.3em;
+				margin: 10px 0;
+			}
+			main #button{
+	            width: 100%;
+	            border-radius: 5px;
+	            border: 0;
+	            background: #39435A;
+	            color: white;
+	            font-size: 130%;
+	            position: fixed;
+	            bottom: 0;
+	            line-height: 50px;
+	            max-width: 750px;
+	            min-width: 32px;
+            }
+            #Reg-login{
+            	padding: 10px;
+            	text-align: center;
+            	border-top: 1px dashed #39435A;
+            }
+            main #regButton{
+	            width: 100%;
+	            background: #1F6CA1;
+	            color: #E1E5EE;
+	            margin-bottom: 10px;
+	            border-radius: 5px;
+	            border: 0;
+	            line-height: 50px;
+	            height: 50px;
+	            max-width: 750px;
+	            min-width: 32px;
+            }
+            .disable{
+            	background: #B4B9C3!important;}
+            #tip{
+            	padding: 10px;
+            	color: red;
+            }
+            #v_container{
+            	width: 100%;
+            	height: 80px;
+            }
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<!--logo问题：文字要隐藏 站内优化 方便网页被搜索引擎搜索
+			浮动：
+			         作用：是一种布局方式 横排布局 
+			         特点：浮动脱离文档流 不能撑起父标签 浮动的标签类型为inline-block 没有默认的宽度
+			清除浮动：
+			         空标签/直接给父标签添加overflow：hidden/父标签添加clearfix
+			盒子模型有两种：包含四层width+height padding border margin
+			        标准盒子模型：逐层相加
+			   IE盒子模型：CSS盒子模型---总大小等于宽高 填充和边框是里边加的box-sizing:border-box
+		-->
+		<header class="clearfix">
+			<div class="icon logo">
+				<a href="index.html">
+					<span>科莱商城</span>
+				</a>
+			</div>
+			<div class="title">用户登录</div>
+			<div class="icon login">
+				<a href="login.html">
+					<span>登录</span>
+				</a>
+			</div>
+		</header>
+			<!--<div class="clear"></div>-->
+			<!--登陆主题-->
+			<main>
+				<form action="">
+					<!--正则表达式：是一种验证语法-->
+					<input type="text" placeholder="6-12位用户名：字母/数字" pattern="[0-9A-Za]{6,12}"/>
+					<input type="password" placeholder="6-12位密码：字母/数字" pattern="[0-9A-Za]{6,12}"/>
+					<input type="text" placeholder="请输入验证码：字母/数字" pattern="[0-9A-Za]{4}"/>
+					<div id="v_container"></div>
+		<div id="tip"></div>
+		<div id="Reg-login">
+			<a href="reg.html">没有账户，点击注册</a>
+		</div>
+		<button id="button">点击登录</button>
+				</form>
+			</main>
+		
+	</body>
+</html>

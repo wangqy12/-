@@ -1,0 +1,156 @@
+.icon{
+	background: url(../img/icon.png) no-repeat;
+	-webkit-background-size: 375px auto;
+	background-size: 375px auto;
+}
+/*头部*/
+header{
+	z-index: 1000;
+	max-width: 750px;
+	min-width: 320px;
+	background-color: #39435b;
+	color: #fff;
+	padding: 15px 10px;
+	/*开启弹性布局---设置元素的对齐方式*/
+	display: flex;
+	justify-content: space-between;/*两端对齐*/
+	/*定位*/
+	position: fixed;
+	top: 0;
+	/*实现居中*/
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+header .left{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-position: -160px -8px;
+}
+header .right{
+	color: #fff;
+	padding-left: 30px;
+	background-position: -180px -8px;
+}
+/*内容*/
+.container{
+	max-width: 750px;
+	min-width: 320px;
+	margin: 0 auto;
+	margin: 60px auto 70px;
+}
+/*轮播*/
+.carousel{
+	width: 100%;
+	overflow: hidden;
+}
+.carousel ul{
+	width: 300%;
+	/*只是为了让left生效*/
+	position: relative;
+	/*调用动画*/
+	animation:slide 10s 2s infinite alternate;
+}
+.carousel ul li{
+	width: calc(100% / 3);
+	float: left;
+}
+/*定义动画*/
+@keyframes slide{
+	0%{left: 0;}
+	40%,50%{left: -100%;}
+	50%,100%{left: -200%;}
+}
+/*商品列表*/
+.goods-list{
+	background: #fff;
+	margin-bottom: 10px;
+	
+}
+.goods-items{
+	overflow: hidden;
+	padding: 5px 0;
+	position: relative;
+	min-width: 150px;
+}
+.goods-items li{
+	overflow: hidden;
+	padding: 5px 0;
+	border-bottom: 1px solid #ccc;
+}
+.goods-items li a{
+	display: block;
+	height: 100%;
+	overflow: hidden;
+	padding: 0 10px;
+}
+/*图片*/
+.goods-items em{
+	width: 25%;
+	float: left;
+	margin-right: 5px;
+}
+img{
+	width: 100%;
+	vertical-align: middle;
+}
+/*文字*/
+.goods-items span{
+	float: right;
+	width: calc(75% - 5px);
+	line-height: 1.5em;
+}
+.goods-items span:nth-child(2){
+	font-size: 16px;
+}
+.goods-items span:nth-child(3){
+	color: red;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.goods-items span:nth-child(4){
+	color: #AAAAAA;
+	font-size: 14px;
+	
+}
+.goods-items span i{
+	padding-left:20px;
+}
+/*底部*/
+footer{
+	max-width: 750px;
+	min-width: 320px;
+	background-color: #39435b;
+	position: fixed;
+	margin: 0 auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+footer ul{
+	display: flex;
+	justify-content: space-around;
+}
+footer ul li{
+	width: 45px;
+}
+footer ul li:nth-child(1){
+	background-position: -14px -258px;
+}
+footer ul li:nth-child(2){
+	background-position: -117px -198px;
+}
+footer ul li:nth-child(3){
+	background-position: -222px -198px;
+}
+footer ul li:nth-child(4){
+	background-position: -325px -198px;
+}
+footer ul li a{
+	text-align: center;
+	display: block;
+	color: #fff;
+	padding-top: 40px;
+	padding-left: 3px;
+}

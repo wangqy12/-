@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="js/detail.js" ></script>
+		<title>商品详情</title>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a class="left icon" href="goods.html"></a>
+			<span>商品详情</span>
+			<a class="right icon" href="#"></a>
+		</header>
+		<!--正文-->
+		<div class="container">
+			<!--上方-->
+			<div class="detail-info">
+				<!--图片-->
+				<div class="detail-banner">
+					<img src="img/goods-banner.png"/>
+				</div>
+				<!--文字-->
+				<div class="detail-explain">
+					<h3>C#编程基础-由武汉格莱科技有限公司联合湖北银河信息技术学院倾力打造</h3>
+					<ul>
+						<li>商品价格：<em>￥980.00</em></li>
+						<li>专业：移动互联网开发及移动互联网应用</li>
+						<li>数量：<input type="number" value="1"/>套（共13册）</li>
+					</ul>
+				</div>
+			</div>
+			<!--下方-->
+			<div class="detail-datails">
+				<!--标题-->
+				<div class="detail-hd">
+					<ul>
+						<!--图文详情-->
+						<li class="active">
+							<a href="javascript:void(0)">图文详情</a>
+						</li>
+						<!--规格参数-->
+						<li class="">
+							<a href="javascript:void(0)">规格参数</a>
+						</li>
+						<!--评价-->
+						<li class="">
+							<a href="javascript:void(0)">评价（199）</a>
+						</li>
+					</ul>
+				</div>
+				<!--下方图片-->
+				<!--1-->
+				<div class="detail-content" style="display: block;">
+					<img src="img/c.jpg"/>
+					<img src="img/web.jpg"/>
+					<img src="img/winform.jpg"/>
+				</div>
+				<!--2-->
+				<div class="detail-content" style="display: none;">
+					<img src="img/loading.gif" class="loading"/>
+					<p>等待加载 规格参数......</p>
+				</div>
+				<!--3-->
+				<div class="detail-content" style="display: none;">
+					<img src="img/loading.gif" class="loading"/>
+					<p>等待加载 评论......</p>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<footer>
+			<span>
+				<a href="#" class="icon-sc sc">收藏</a>
+				<a href="#" class="icon-gw gw">购物车</a>
+				<a href="#" class="jiesuan">去结算</a>
+				<a href="#" class="addCart">加入购物车</a>
+			</span>
+		</footer>
+	</body>
+</html>

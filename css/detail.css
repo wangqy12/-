@@ -1,0 +1,140 @@
+.icon{
+	background: url(../img/icon.png) no-repeat;
+	-webkit-background-size: 370px auto;
+	background-size: 370px auto;
+}
+[class^="icon"]{
+	/*display: inline-block;*/
+	background: url(../img/icon.png) no-repeat;
+	background-size: 370px auto;
+}
+header{
+	max-width: 750px;
+	min-width: 320px;
+	background-color: #39435b;
+	color: #fff;
+	padding: 15px 10px;
+	display: flex;/*开启弹性盒子*/
+	justify-content: space-between;/*两端对齐*/
+	position: fixed;/*相对于窗口定位*/
+	/*定位于上部居中*/
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+header .left{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-position: -160px -7px;
+}
+/*正文*/
+.container{
+	max-width: 750px;
+	min-width: 320px;
+	margin: 0 auto;
+	margin: 60px auto 70px;
+}
+/*上方*/
+/*图片*/
+.detail-info{
+	background: #fff;
+	padding: 10px;
+}
+/*banner*/
+.detail-banner{
+	min-height: 190px;
+}
+/*文字*/
+.detail-explain{
+	padding: 10px 0;
+}
+.detail-explain h3{
+	margin-bottom: 10px;
+}
+.detail-explain li{
+	line-height: 1.5;
+}
+.detail-explain li em{
+	color: red;
+}
+.detail-explain li input{
+	text-align: center;
+	width: 40px;
+	height: 24px;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+/*下方*/
+.detail-datails{
+	margin-top: 10px;
+	background: #fff;
+}
+/*标题*/
+.detail-hd{
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid #ccc;
+}
+.detail-hd li{
+	width: 32%;
+	text-align: center;
+	display: inline-block;/*变成行内元素让li标签全部显示出来*/
+}
+/*下方图片*/
+.detail-content img{
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.detail-content .loading{
+	width: 30px;
+	height: 30px;
+	border: none;
+	margin-left: 330px;
+} 
+.detail-content p{
+	text-align: center;
+}
+/*底部*/
+footer{
+	max-width: 750px;
+	min-width: 320px;
+	height: 60px;
+	line-height: 60px;
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+	position: fixed;
+	margin: 0 auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.sc{
+	text-align: center;
+	padding-top: 20px;
+    margin-right: 30px;
+    margin-left: 10px;
+    background-position: -307px -47px;
+}
+.gw{
+	text-align: center;
+	padding-top: 20px;
+    background-position: -234px -43px;
+}
+.jiesuan{
+	color: #fff;
+	background-color: #FF9900;
+	float: right;
+	width: 100px;
+	text-align: center;
+}
+.addCart{
+	color: #fff;
+	background-color: #39435B;
+	float: right;
+	width: 100px;
+	text-align: center;
+}
+

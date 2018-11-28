@@ -1,0 +1,183 @@
+.icon{
+	background:url(../img/icon.png) no-repeat;
+	-webkit-background-size: 375px auto;
+	background-size: 375px auto;
+}
+[class^="icon"]{
+	background:url(../img/icon.png) no-repeat;
+	-webkit-background-size: 375px auto;
+	background-size: 375px auto;
+}
+/*头部*/
+header{
+	z-index: 1000;
+	max-width: 750px;
+	min-width: 320px;
+	background-color: #39435b;
+	color: #fff;
+	padding: 15px 10px;
+	/*开启弹性布局---设置元素的对齐方式*/
+	display: flex;
+	justify-content: space-between;/*两端对齐*/
+	/*定位*/
+	position: fixed;
+	top: 0;
+	/*实现居中*/
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+header .left{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-position: -160px -8px;
+}
+/*内容*/
+.container{
+	max-width: 750px;
+	min-width: 320px;
+	margin: 0 auto;
+	/*上线留白----防止被盖住*/
+	padding: 55px 0 70px;
+}
+.cart-list{
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+/*标题*/
+/*内容一*/
+.cart-hd{
+	padding: 0 10px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+.cart-hd input{
+	margin-right: 3px;
+	border-radius: 2px;
+    vertical-align:middle;/*checkbox居中*/
+}
+/*图片*/
+.cart-items{
+	min-width: 120px;
+	overflow: hidden;
+	padding: 5px 10px;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+/*简介*/
+.cart-items dt{
+	width: 30%;
+	min-width: 20%;
+	float: left;
+	margin-right: 5px;
+}
+img{
+	width: 100%;
+	vertical-align: middle;
+}
+.cart-items dd{
+	line-height: 1.5em;
+}
+.cart-items .price{
+	color: red;
+	margin-top: 10px;
+}
+/*叉号*/
+.icon-del{
+	display: inline-block;
+	background-position: -256px -7px;
+}
+.del-item{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+}
+/*小计*/
+.subtotal{
+	padding: 10px 10px;
+}
+.subtotal em{
+	color: red;
+	line-height: 25px;
+}
+em{
+	font-style: normal;
+}
+.count{
+	float: right;
+}
+.minus{
+	border: 1px solid #E1E5EE;
+	border-right: none;
+	height: 28px;
+	border-radius: 4px;
+	background-position: -278px -3px;
+}
+.minus, .add{
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+.count input{
+	border: 1px solid #E1E5EE;
+	height: 28px;
+	padding: 4px;
+	width: 40px;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.add{
+	border: 1px solid #E1E5EE;
+	border-left: none;
+	height: 28px;
+	border-radius: 4px;
+	background-position: -310px -3px;
+}
+/*底部*/
+footer{
+	height: 55px;
+	line-height: 55px;
+	max-width: 750px;
+	min-width: 320px;
+	background-color: #FFF;
+	position: fixed;
+	margin: 0 auto;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #ccc;
+}
+footer input{
+	margin-left: 10px;
+	margin-right: 3px;
+	border-radius: 2px;
+	vertical-align: middle;
+}
+label{
+	cursor: default;
+}
+footer em{
+	margin-left: 10px;
+	color: red;
+	font-size: 16px;
+}
+em{
+	font-style: normal;
+}
+footer a{
+	display: inline-block;
+	padding: 0 25px;
+	background: #FF9900;
+	float: right;
+	margin-right: -10px;
+	color: #fff;
+	font-size: 16px;
+}
+a{
+	text-decoration: none;
+}
